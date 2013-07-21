@@ -10,7 +10,6 @@ Known issues
 
 Android users seem to be missing the weather icon image, but I have no idea why. Please help!
 
-
 characterRegex
 -------------
 
@@ -18,12 +17,16 @@ I had to the patch the Pebble SDK to allow &deg; in the characterRegex.
 
 "characterRegex": "[:0-9A-Z&deg;]",
 
-[https://github.com/fisakov/pebble-sdk-characterRegex](View Patch)
+[https://github.com/fisakov/pebble-sdk-characterRegex]
 
 I think this might be done differently on CloudPebble.
 
 "characterRegex": "[:0-9A-Z\u00b0]",  << or something like that
 
+Fonts
+-------------
+
+I have excluded the .otf files used from github, but instructions to download them can be found in /resources/src/fonts/fonts.txt
 
 How to build
 -------------
