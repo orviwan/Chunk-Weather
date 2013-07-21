@@ -31,11 +31,11 @@ How to build
 You can build lots of variants of Chunk:
 
 1. Black on White
-   resources.json - make sure all image paths are 'images/'
-   config.h
-     SPLIT_MODE 0
-     COLOUR_TEXT_TOP_SPLIT GColorBlack
-     COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
+    resources.json - make sure all image paths are 'images/'
+        config.h
+        SPLIT_MODE 0
+        COLOUR_TEXT_TOP_SPLIT GColorBlack
+        COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
      
 2. White on Black
    resources.json - make sure all image paths are 'black_images/'
