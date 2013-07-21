@@ -9,3 +9,11 @@ src/*.c~
 src/*.h~
 resources/wscript/*
 *.*~
+.waf-*/*
+.lock-waf_linux2_build
+include
+lib
+pebble_app.ld
+tools
+waf
+wscript
