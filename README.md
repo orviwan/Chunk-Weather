@@ -31,6 +31,7 @@ How to build
 You can build lots of variants of Chunk:
 
 1. Black on White
+
     resources.json - make sure all image paths are 'images/'
         config.h
         SPLIT_MODE 0
@@ -38,22 +39,24 @@ You can build lots of variants of Chunk:
         COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
      
 2. White on Black
-   resources.json - make sure all image paths are 'black_images/'
-   config.h
-     SPLIT_MODE 0
-     COLOUR_TEXT_TOP_SPLIT GColorWhite
-     COLOUR_TEXT_BOTTOM_SPLIT GColorWhite
+
+    resources.json - make sure all image paths are 'black_images/'
+        config.h
+        SPLIT_MODE 0
+        COLOUR_TEXT_TOP_SPLIT GColorWhite
+        COLOUR_TEXT_BOTTOM_SPLIT GColorWhite
      
 3. Split 1 - Black top / White bottom
-   resources.json - make sure all image paths are 'black_images/'
-   config.h
-     SPLIT_MODE 1
-     COLOUR_TEXT_TOP_SPLIT GColorWhite
-     COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
+
+    resources.json - make sure all image paths are 'black_images/'
+        config.h
+        SPLIT_MODE 1
+        COLOUR_TEXT_TOP_SPLIT GColorWhite
+        COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
      
-3. Split 2 - White top / Black bottom
-   resources.json - make sure all image paths are 'images/'
-   config.h
-     SPLIT_MODE 1
-     COLOUR_TEXT_TOP_SPLIT GColorBlack
-     COLOUR_TEXT_BOTTOM_SPLIT GColorWhite
+4. Split 2 - White top / Black bottom
+    resources.json - make sure all image paths are 'images/'
+        config.h
+        SPLIT_MODE 1
+        COLOUR_TEXT_TOP_SPLIT GColorBlack
+        COLOUR_TEXT_BOTTOM_SPLIT GColorWhite
