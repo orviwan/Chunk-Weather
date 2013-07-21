@@ -1,0 +1,11 @@
+build/*
+lib/*
+pebble_app.ld/*
+tools/*
+wscript/*
+include/*
+waf/*
+src/*.c~
+src/*.h~
+resources/wscript/*
+*.*~
