@@ -33,12 +33,7 @@ void link_monitor_handle_failure(int error)
 		case HTTP_INVALID_BRIDGE_RESPONSE + 1000:
 			//The phone may have no internet connection, but the link should be fine
 			return;
-	
-#ifdef DEBUG
-		default:
-			//Unrecognised failure reason. Debug.
-			text_layer_set_text(&date_layer, itoa(error));
-#endif
+
 	}
 	
 	if(__linkStatus == LinkStatusOK)

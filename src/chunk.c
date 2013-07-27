@@ -10,13 +10,6 @@
 #include "config.h"
 
 
-// This is the Default APP_ID to work with old versions of httpebble (iOS)
-#define MY_UUID { 0x91, 0x41, 0xB6, 0x28, 0xBC, 0x89, 0x49, 0x8E, 0xB1, 0x47, 0x04, 0x9F, 0x49, 0xC0, 0x99, 0xAD }
-
-// Use this one if you want to compile just for Android
-//#define MY_UUID { 0x91, 0x41, 0xB6, 0x28, 0xBC, 0x89, 0x49, 0x8E, 0xB1, 0x47, 0x29, 0x08, 0x7A, 0xB9, 0xB6, 0x19}
-
-
 PBL_APP_INFO(MY_UUID,
              "Chunk Weather", "", // Modification of "Futura Weather" by Niknam Moslehi, which was modified "Roboto Weather" by Martin Rosinski
              1, 1, /* App version */
@@ -40,6 +33,9 @@ static int initial_minute;
 //Weather Stuff
 static int our_latitude, our_longitude;
 static bool located = false;
+static int16_t icon = 0;
+static int16_t high = 0;
+static int16_t low = 0;
 
 WeatherLayer weather_layer;
 
@@ -58,13 +54,12 @@ void failed(int32_t cookie, int http_status, void* context) {
 void success(int32_t cookie, int http_status, DictionaryIterator* received, void* context) {
 	if(cookie != WEATHER_HTTP_COOKIE) return;
 
-  int16_t high = 0;
-  int16_t low = 0;
+
 
   //Weather icon
 	Tuple* icon_tuple = dict_find(received, WEATHER_KEY_ICON);
 	if(icon_tuple) {
-		int16_t icon = icon_tuple->value->int16;
+		icon = icon_tuple->value->int16;
 		if(icon >= 0 && icon < 16) {
 			weather_layer_set_icon(&weather_layer, icon);
 		} else {
@@ -112,23 +107,19 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t) {
     /* Need to be static because pointers to them are stored in the text
     * layers.
     */
-    static char date_text[] = "XXX 00";
+
     static char hour_text[] = "00";
     static char minute_text[] = ":00";
 
     static char date_day[] = "XXX";
     static char date_monthday[] = "00";
     static char date_month[] = "XXX";
-    static char date_year[] = "0000";
+    
     static char full_date_text[20] = "";
 
     (void)ctx;  /* prevent "unused parameter" warning */
 
     if (t->units_changed & DAY_UNIT) {		
-	    string_format_time(date_text,
-                           sizeof(date_text),
-                           "%a %d",
-                           t->tick_time);
 
 	    string_format_time(date_day,
                            sizeof(date_day),
@@ -144,21 +135,6 @@ void handle_minute_tick(AppContextRef ctx, PebbleTickEvent *t) {
                            sizeof(date_month),
                            "%b",
                            t->tick_time);
-
-	    string_format_time(date_year,
-                           sizeof(date_year),
-                           "%Y",
-                           t->tick_time);
-
-		  if (date_text[4] == '0') /* is day of month < 10? */ {
-		      /* This is a hack to get rid of the leading zero of the
-			     day of month
-              */
-          memmove(&date_text[4], &date_text[5], sizeof(date_text) - 1);
-		  }
-
-      //removed broken date suffix
-      //snprintf(full_date_text, sizeof(full_date_text), "%s %s%s %s", date_day, date_monthday, daySuffix(my_atoi(date_day)), date_month);
 
       snprintf(full_date_text, sizeof(full_date_text), "%s %s %s", date_day, date_monthday, date_month); 
       text_layer_set_text(&date_layer, full_date_text);
@@ -303,7 +279,6 @@ void request_weather() {
 	DictionaryIterator *body;
 	HTTPResult result = http_out_get(SERVER_URL, WEATHER_HTTP_COOKIE, &body);
 	if(result != HTTP_OK) {
-    weather_layer_set_error(&weather_layer, 9988);
 		return;
 	}
 	dict_write_int32(body, WEATHER_KEY_LATITUDE, our_latitude);
@@ -311,7 +286,6 @@ void request_weather() {
 	dict_write_cstring(body, WEATHER_KEY_UNIT_SYSTEM, UNIT_SYSTEM);
 	// Send it.
 	if(http_out_send() != HTTP_OK) {
-    weather_layer_set_error(&weather_layer, 9989);
 		return;
 	}
 }

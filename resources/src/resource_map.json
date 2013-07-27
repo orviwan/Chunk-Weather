@@ -29,107 +29,107 @@
       {
          "type":"png",
          "defName":"IMAGE_MENU_ICON",
-         "file":"images/menu_icon.png"
+         "file":"black_images/menu_icon.png"
       },
       {
          "type":"png",
          "defName":"IMAGE_BACKGROUND",
-         "file":"images/background.png"
+         "file":"black_images/background.png"
       },
       {
          "type":"png",
          "defName":"IMAGE_BACKGROUND_SPLIT",
-         "file":"images/background-split.png"
+         "file":"black_images/background-split.png"
       },
       {
          "defName":"IMAGE_THUNDER",
          "type":"png",
-         "file":"images/weather/thunder.png"
+         "file":"black_images/weather/thunder.png"
       },
       {
          "defName":"IMAGE_SNOW_SLEET",
          "type":"png",
-         "file":"images/weather/snow-sleet.png"
+         "file":"black_images/weather/snow-sleet.png"
       },
       {
          "defName":"IMAGE_SLEET",
          "type":"png",
-         "file":"images/weather/sleet.png"
+         "file":"black_images/weather/sleet.png"
       },
       {
          "defName":"IMAGE_RAIN_SNOW",
          "type":"png",
-         "file":"images/weather/rain-snow.png"
+         "file":"black_images/weather/rain-snow.png"
       },
       {
          "defName":"IMAGE_RAIN_SLEET",
          "type":"png",
-         "file":"images/weather/rain-sleet.png"
+         "file":"black_images/weather/rain-sleet.png"
       },
       {
          "defName":"IMAGE_HOT",
          "type":"png",
-         "file":"images/weather/hot.png"
+         "file":"black_images/weather/hot.png"
       },
       {
          "defName":"IMAGE_COLD",
          "type":"png",
-         "file":"images/weather/cold.png"
+         "file":"black_images/weather/cold.png"
       },
       {
          "defName":"IMAGE_CLEAR_DAY",
          "type":"png",
-         "file":"images/weather/clear-day.png"
+         "file":"black_images/weather/clear-day.png"
       },
       {
          "defName":"IMAGE_CLEAR_NIGHT",
          "type":"png",
-         "file":"images/weather/clear-night.png"
+         "file":"black_images/weather/clear-night.png"
       },
       {
          "defName":"IMAGE_CLOUDY",
          "type":"png",
-         "file":"images/weather/cloudy.png"
+         "file":"black_images/weather/cloudy.png"
       },
       {
          "defName":"IMAGE_FOG",
          "type":"png",
-         "file":"images/weather/fog.png"
+         "file":"black_images/weather/fog.png"
       },
       {
          "defName":"IMAGE_PARTLY_CLOUDY_DAY",
          "type":"png",
-         "file":"images/weather/partly-cloudy-day.png"
+         "file":"black_images/weather/partly-cloudy-day.png"
       },
       {
          "defName":"IMAGE_PARTLY_CLOUDY_NIGHT",
          "type":"png",
-         "file":"images/weather/partly-cloudy-night.png"
+         "file":"black_images/weather/partly-cloudy-night.png"
       },
       {
          "defName":"IMAGE_RAIN",
          "type":"png",
-         "file":"images/weather/rain.png"
+         "file":"black_images/weather/rain.png"
       },
       {
          "defName":"IMAGE_SNOW",
          "type":"png",
-         "file":"images/weather/snow.png"
+         "file":"black_images/weather/snow.png"
       },
       {
          "defName":"IMAGE_WIND",
          "type":"png",
-         "file":"images/weather/wind.png"
+         "file":"black_images/weather/wind.png"
       },
       {
          "defName":"IMAGE_NO_WEATHER",
          "type":"png",
-         "file":"images/weather/error.png"
+         "file":"black_images/weather/error.png"
       },
       {
          "defName":"IMAGE_NO_ERROR",
          "type":"png",
-         "file":"images/weather/error.png"
+         "file":"black_images/weather/error.png"
       }
    ]
 }
