@@ -8,7 +8,7 @@ This is mostly hacked together from the hard work of many others including: @Kat
 Known issues
 -------------
 
-Android users seem to be missing the weather icon image, but I have no idea why. Please help!
+....
 
 characterRegex
 -------------
@@ -31,52 +31,9 @@ I have excluded the .otf files used from github, but instructions to download th
 How to build
 -------------
 
-You can build lots of variants of Chunk:
+You can build lots of variants of Chunk, just edit the config file.
 
-1. Black on White
-
-    resources.json - make sure all image paths are 'images/'
-    
-        config.h
-        
-        SPLIT_MODE 0
-        
-        COLOUR_TEXT_TOP_SPLIT GColorBlack
-        
-        COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
-     
+1. Black on White 
 2. White on Black
-
-    resources.json - make sure all image paths are 'black_images/'
-    
-        config.h
-        
-        SPLIT_MODE 0
-        
-        COLOUR_TEXT_TOP_SPLIT GColorWhite
-        
-        COLOUR_TEXT_BOTTOM_SPLIT GColorWhite
-     
-3. Split 1 - Black top / White bottom
-
-    resources.json - make sure all image paths are 'black_images/'
-    
-        config.h
-        
-        SPLIT_MODE 1
-        
-        COLOUR_TEXT_TOP_SPLIT GColorWhite
-        
-        COLOUR_TEXT_BOTTOM_SPLIT GColorBlack
-     
-4. Split 2 - White top / Black bottom
-
-    resources.json - make sure all image paths are 'images/'
-    
-        config.h
-        
-        SPLIT_MODE 1
-        
-        COLOUR_TEXT_TOP_SPLIT GColorBlack
-        
-        COLOUR_TEXT_BOTTOM_SPLIT GColorWhite
+3. Split 1 - White top / Black bottom     
+4. Split 2 - Black top / White bottom
