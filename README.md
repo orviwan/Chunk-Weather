@@ -3,12 +3,10 @@ Chunk-Weather
 
 Weather watch face for Pebble.
 
+![Imgur](http://i.imgur.com/mSByofK)
+
 This is mostly hacked together from the hard work of many others including: @Katharine, Niknam Moslehi, Martin Rosinski, Hank, @lkorth and probably others.
 
-Known issues
--------------
-
-....
 
 characterRegex
 -------------
