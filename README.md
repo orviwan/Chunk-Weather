@@ -26,6 +26,18 @@ Fonts
 
 I have excluded the .otf files used from github, but instructions to download them can be found in /resources/src/fonts/fonts.txt
 
+Images
+-------------
+
+The weather icons included with this release are copyright 'Mike Afford Media'.
+
+You are free to use this set of icons in any Pebble watch face, but please include this licence with any source distribution.
+
+If you want the full set of icons in much better quality, please visit:
+
+[Buy Now](http://www.mikeafford.com/store/index.html)
+
+
 How to build
 -------------
 
