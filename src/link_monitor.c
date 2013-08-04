@@ -9,8 +9,7 @@ enum LinkStatus
 };
 	
 enum LinkStatus __linkStatus = LinkStatusUnknown;
-	
-extern TextLayer date_layer;
+
 	
 void link_monitor_ping()
 {
@@ -36,7 +35,7 @@ void link_monitor_handle_failure(int error)
 
 	}
 	
-	if(__linkStatus == LinkStatusOK)
+	if(__linkStatus == LinkStatusOK && VIBRATE == 1)
 	{
 		//The link has just failed, notify the user
 		// Vibe pattern: ON, OFF, ON, ...
@@ -54,7 +53,7 @@ void link_monitor_handle_failure(int error)
 
 void link_monitor_handle_success()
 {
-	if(__linkStatus == LinkStatusFailed)
+	if(__linkStatus == LinkStatusFailed && VIBRATE == 1)
 	{
 		//Notify the user of reconnection
 		vibes_short_pulse();

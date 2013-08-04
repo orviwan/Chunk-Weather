@@ -3,133 +3,278 @@
    "versionDefName":"APP_RESOURCES",
    "media":[
       {
-        "defName": "SMALL_22",
-        "characterRegex": "[:0-9a-zA-Z °-]",
-        "type": "font",
-        "file": "fonts/BebasNeue.otf"
-      },
-{
-        "defName": "SMALL_26",
-        "characterRegex": "[:0-9a-zA-Z °-]",
-        "type": "font",
-        "file": "fonts/BebasNeue.otf"
+         "defName":"SMALL_22",
+         "characterRegex":"[:0-9A-Zv. °]",
+         "type":"font",
+         "file":"fonts/BebasNeue.otf"
       },
       {
-        "defName": "MEDIUM_34",
-        "characterRegex": "[:0-9 °]",
-        "type": "font",
-        "file": "fonts/MuroRegular.otf"
+         "defName":"SMALL_26",
+         "characterRegex":"[:0-9A-Za-z °-]",
+         "type":"font",
+         "file":"fonts/BebasNeue.otf"
       },
       {
-        "defName": "BIG_52",
-        "characterRegex": "[:0-9Ee]",
-        "type": "font",
-        "file": "fonts/MuroRegular.otf"
+         "defName":"MEDIUM_34",
+         "characterRegex":"[:0-9 °.]",
+         "type":"font",
+         "file":"fonts/MuroRegular.otf"
+      },
+      {
+         "defName":"BIG_52",
+         "characterRegex":"[:0-9]",
+         "type":"font",
+         "file":"fonts/MuroRegular.otf"
       },
       {
          "type":"png",
          "defName":"IMAGE_MENU_ICON",
-         "file":"black_images/menu_icon.png"
+         "file":"images/menu_icon.png"
       },
       {
+         "defName":"IMAGE_TORNADO",
          "type":"png",
-         "defName":"IMAGE_BACKGROUND",
-         "file":"black_images/background.png"
+         "file":"images/weather/wsymbol_0079_tornado.png"
       },
       {
+         "defName":"IMAGE_TROPICAL_STORM",
          "type":"png",
-         "defName":"IMAGE_BACKGROUND_SPLIT",
-         "file":"black_images/background-split.png"
+         "file":"images/weather/wsymbol_0080_tropical_storm_hurricane.png"
       },
       {
-         "defName":"IMAGE_THUNDER",
+         "defName":"IMAGE_HURRICANE",
          "type":"png",
-         "file":"black_images/weather/thunder.png"
+         "file":"images/weather/wsymbol_0080_tropical_storm_hurricane.png"
       },
       {
-         "defName":"IMAGE_SNOW_SLEET",
+         "defName":"IMAGE_SEVERE_THUNDERSTORMS",
          "type":"png",
-         "file":"black_images/weather/snow-sleet.png"
+         "file":"images/weather/wsymbol_0024_thunderstorms.png"
       },
       {
-         "defName":"IMAGE_SLEET",
+         "defName":"IMAGE_THUNDERSTORMS",
          "type":"png",
-         "file":"black_images/weather/sleet.png"
+         "file":"images/weather/wsymbol_0024_thunderstorms.png"
       },
       {
-         "defName":"IMAGE_RAIN_SNOW",
+         "defName":"IMAGE_MIXED_RAIN_AND_SNOW",
          "type":"png",
-         "file":"black_images/weather/rain-snow.png"
+         "file":"images/weather/wsymbol_0021_cloudy_with_sleet.png"
       },
       {
-         "defName":"IMAGE_RAIN_SLEET",
+         "defName":"IMAGE_MIXED_RAIN_AND_SLEET",
          "type":"png",
-         "file":"black_images/weather/rain-sleet.png"
+         "file":"images/weather/wsymbol_0050_freezing_rain.png"
       },
       {
-         "defName":"IMAGE_HOT",
+         "defName":"IMAGE_MIXED_SNOW_AND_SLEET",
          "type":"png",
-         "file":"black_images/weather/hot.png"
+         "file":"images/weather/wsymbol_0021_cloudy_with_sleet.png"
       },
       {
-         "defName":"IMAGE_COLD",
+         "defName":"IMAGE_FREEZING_DRIZZLE",
          "type":"png",
-         "file":"black_images/weather/cold.png"
+         "file":"images/weather/wsymbol_0049_freezing_drizzle.png"
       },
       {
-         "defName":"IMAGE_CLEAR_DAY",
+         "defName":"IMAGE_DRIZZLE",
          "type":"png",
-         "file":"black_images/weather/clear-day.png"
+         "file":"images/weather/wsymbol_0048_drizzle.png"
       },
       {
-         "defName":"IMAGE_CLEAR_NIGHT",
+         "defName":"IMAGE_FREEZING_RAIN",
          "type":"png",
-         "file":"black_images/weather/clear-night.png"
+         "file":"images/weather/wsymbol_0050_freezing_rain.png"
       },
       {
-         "defName":"IMAGE_CLOUDY",
+         "defName":"IMAGE_SHOWERS",
          "type":"png",
-         "file":"black_images/weather/cloudy.png"
+         "file":"images/weather/wsymbol_0009_light_rain_showers.png"
       },
       {
-         "defName":"IMAGE_FOG",
+         "defName":"IMAGE_SHOWERS2",
          "type":"png",
-         "file":"black_images/weather/fog.png"
+         "file":"images/weather/wsymbol_0010_heavy_rain_showers.png"
       },
       {
-         "defName":"IMAGE_PARTLY_CLOUDY_DAY",
+         "defName":"IMAGE_SNOW_FLURRIES",
          "type":"png",
-         "file":"black_images/weather/partly-cloudy-day.png"
+         "file":"images/weather/wsymbol_0020_cloudy_with_heavy_snow.png"
       },
       {
-         "defName":"IMAGE_PARTLY_CLOUDY_NIGHT",
+         "defName":"IMAGE_LIGHT_SNOW_SHOWERS",
          "type":"png",
-         "file":"black_images/weather/partly-cloudy-night.png"
+         "file":"images/weather/wsymbol_0019_cloudy_with_light_snow.png"
       },
       {
-         "defName":"IMAGE_RAIN",
+         "defName":"IMAGE_BLOWING_SNOW",
          "type":"png",
-         "file":"black_images/weather/rain.png"
+         "file":"images/weather/wsymbol_0053_blowing_snow.png"
       },
       {
          "defName":"IMAGE_SNOW",
          "type":"png",
-         "file":"black_images/weather/snow.png"
+         "file":"images/weather/wsymbol_0020_cloudy_with_heavy_snow.png"
       },
       {
-         "defName":"IMAGE_WIND",
+         "defName":"IMAGE_HAIL",
          "type":"png",
-         "file":"black_images/weather/wind.png"
+         "file":"images/weather/wsymbol_0023_cloudy_with_heavy_hail.png"
       },
       {
-         "defName":"IMAGE_NO_WEATHER",
+         "defName":"IMAGE_SLEET",
          "type":"png",
-         "file":"black_images/weather/error.png"
+         "file":"images/weather/wsymbol_0021_cloudy_with_sleet.png"
       },
       {
-         "defName":"IMAGE_NO_ERROR",
+         "defName":"IMAGE_DUST",
          "type":"png",
-         "file":"black_images/weather/error.png"
+         "file":"images/weather/wsymbol_0074_dust_sand_night.png"
+      },
+      {
+         "defName":"IMAGE_FOGGY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0007_fog.png"
+      },
+      {
+         "defName":"IMAGE_HAZE",
+         "type":"png",
+         "file":"images/weather/wsymbol_0005_hazy_sun.png"
+      },
+      {
+         "defName":"IMAGE_SMOKY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0055_smoke.png"
+      },
+      {
+         "defName":"IMAGE_BLUSTERY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0060_windy.png"
+      },
+      {
+         "defName":"IMAGE_WINDY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0060_windy.png"
+      },
+      {
+         "defName":"IMAGE_COLD",
+         "type":"png",
+         "file":"images/weather/wsymbol_0046_cold.png"
+      },
+      {
+         "defName":"IMAGE_CLOUDY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0003_white_cloud.png"
+      },
+      {
+         "defName":"IMAGE_MOSTLY_CLOUDY_NIGHT",
+         "type":"png",
+         "file":"images/weather/wsymbol_0044_mostly_cloudy_night.png"
+      },
+      {
+         "defName":"IMAGE_MOSTLY_CLOUDY_DAY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0043_mostly_cloudy.png"
+      },
+      {
+         "defName":"IMAGE_PARTLY_CLOUDY_NIGHT",
+         "type":"png",
+         "file":"images/weather/wsymbol_0041_partly_cloudy_night.png"
+      },
+      {
+         "defName":"IMAGE_PARTLY_CLOUDY_DAY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0043_mostly_cloudy.png"
+      },
+      {
+         "defName":"IMAGE_CLEAR_NIGHT",
+         "type":"png",
+         "file":"images/weather/wsymbol_0008_clear_sky_night.png"
+      },
+      {
+         "defName":"IMAGE_SUNNY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0001_sunny.png"
+      },
+      {
+         "defName":"IMAGE_FAIR_NIGHT",
+         "type":"png",
+         "file":"images/weather/wsymbol_0008_clear_sky_night.png"
+      },
+      {
+         "defName":"IMAGE_FAIR_DAY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0001_sunny.png"
+      },
+      {
+         "defName":"IMAGE_MIXED_RAIN_AND_HAIL",
+         "type":"png",
+         "file":"images/weather/wsymbol_0014_light_hail_showers.png"
+      },
+      {
+         "defName":"IMAGE_HOT",
+         "type":"png",
+         "file":"images/weather/wsymbol_0045_hot.png"
+      },
+      {
+         "defName":"IMAGE_ISOLATED_THUNDERSTORMS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0024_thunderstorms.png"
+      },
+      {
+         "defName":"IMAGE_SCATTERED_THUNDERSTORMS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0024_thunderstorms.png"
+      },
+      {
+         "defName":"IMAGE_SCATTERED_THUNDERSTORMS2",
+         "type":"png",
+         "file":"images/weather/wsymbol_0024_thunderstorms.png"
+      },
+      {
+         "defName":"IMAGE_SCATTERED_SHOWERS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0009_light_rain_showers.png"
+      },
+      {
+         "defName":"IMAGE_HEAVY_SNOW",
+         "type":"png",
+         "file":"images/weather/wsymbol_0020_cloudy_with_heavy_snow.png"
+      },
+      {
+         "defName":"IMAGE_SCATTERED_SNOW_SHOWERS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0011_light_snow_showers.png"
+      },
+      {
+         "defName":"IMAGE_HEAVY_SNOW2",
+         "type":"png",
+         "file":"images/weather/wsymbol_0020_cloudy_with_heavy_snow.png"
+      },
+      {
+         "defName":"IMAGE_PARTLY_CLOUDY",
+         "type":"png",
+         "file":"images/weather/wsymbol_0003_white_cloud.png"
+      },
+      {
+         "defName":"IMAGE_THUNDERSHOWERS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0016_thundery_showers.png"
+      },
+      {
+         "defName":"IMAGE_SNOW_SHOWERS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0011_light_snow_showers.png"
+      },
+      {
+         "defName":"IMAGE_ISOLATED_THUNDERSHOWERS",
+         "type":"png",
+         "file":"images/weather/wsymbol_0016_thundery_showers.png"
+      },
+      {
+         "defName":"IMAGE_NOT_AVAILABLE",
+         "type":"png",
+         "file":"images/weather/wsymbol_0999_unknown.png"
       }
    ]
 }

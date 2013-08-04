@@ -1,13 +1,22 @@
 <?php
-define("FLICKR_KEY", "XXXXXXXXXXXXXXXXXXXX");  //GET YOUR OWN API KEY
+define("FLICKR_KEY", "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
+
+error_reporting(0);
 
 $payload = json_decode(file_get_contents('php://input'), true);
 if(!$payload) {
-	$payload = json_decode("{\"1\": 507242.48,\"2\": -35080.86,\"3\": \"c\"}", true);
+	$payload = json_decode("{\"1\": 40424248,\"2\": -2008086,\"3\": \"c\"}", true);
 }	
 $lat = $payload[1] / 1000000;
 $long = $payload[2] / 1000000;
 $units = $payload[3];
+
+$pebbleid = "ABC1234567";
+
+try {
+	$pebbleid = $_SERVER['HTTP_X_PEBBLE_ID'];
+}
+catch (Exception $e) { }
 
 $flickrResponse = get_data('http://api.flickr.com/services/rest/?method=flickr.places.findByLatLon&format=json&api_key=' . FLICKR_KEY . '&lat=' . $lat . '&lon=' . $long);
 $flickrResponse = json_decode(substr($flickrResponse, 14, strlen($flickrResponse) - 15), true);
@@ -35,13 +44,13 @@ if($woeid) {
 else {
 
 	$code = 3200;
-	$temperature = 333;
-	$forecasthigh = 333;
-	$forecasthigh = 333;
+	$temperature = 999;
+	$forecasthigh = 99;
+	$forecasthigh = 99;
 
 }
-
 // yahoo code => watch face icon id // yahoo condition => watch face condition
+/*
 $icons = array(
 	0 => 5, //tornado => wind
 	1 => 5, //tropical storm => wind
@@ -93,20 +102,24 @@ $icons = array(
 	47 => 10, //isolated thundershowers => thunder
 	3200 => 15 //not available
 );
-
+*/
 $data = array();
 
-$data[1] = $icons[$code];
-$data[2] = $temperature;
-//$data[3] = (string)$sunrise;
-//$data[4] = (string)$sunset;
-$data[5] = $forecasthigh; 
-$data[6] = $forecastlow;
-//$ata[7] = (string)$city;
-//$data[8] = (int)$temperature;
+if($code == 3200) {
+	$code=48;
+}
+
+//$code=48;
+//$temperature=999;
+
+
+$data[1] = $temperature;
+$data[2] = $forecasthigh; 
+$data[3] = $forecastlow;
+$data[4] = $code;
 
 /*
-$logentry = date('Y-m-d H:i:s') . PHP_EOL . json_encode($payload) . PHP_EOL . json_encode($data) . PHP_EOL; 
+$logentry = date('Y-m-d H:i:s') . PHP_EOL . $pebbleid . PHP_EOL . json_encode($payload) . PHP_EOL . json_encode($data) . PHP_EOL; 
 $fp = @fopen('log.txt', 'a');  
 fputs($fp, $logentry . PHP_EOL);  
 @fclose($fp);  
